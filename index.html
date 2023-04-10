@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <div class="logo">
+                <h2>Ptas</h2>
+            </div>
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Bookmark</a></li>
+                <li><a href="#">Purchase</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+
+            <button class="login-popup">Login</button>
+
+            <div class="user">
+                <img src="images/PIENTO.jpg" alt="">
+                <span>Dropdown Menu</span>
+            </div>
+            <div class="dropdown-wrapper">
+                <div class="dropdown">
+                    <div class="user-info">
+                        <img src="images/PIENTO.jpg" alt="">
+                        <h3>Petey Wanjiru</h3>
+                    </div>
+                    <hr>
+
+                    <a class="link" href="#">
+                        <img src="images/profile.png" alt="">
+                        <p>Edit Profile</p>
+                        <span>></span>
+                    </a>
+                    <a class="link" href="#">
+                        <img src="images/setting.png" alt="">
+                        <p>Settings & Privacy</p>
+                        <span>></span>
+                    </a>
+                    <a class="link" href="#">
+                        <img src="images/help.png" alt="">
+                        <p>Help & Support</p>
+                        <span>></span>
+                    </a>
+                    <a class="link" href="#">
+                        <img src="images/logout.png" alt="">
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <div class="formbox-wrapper">
+            <i class="fa fa-close"></i>
+            <div class="form-box login">
+                <h1>Login</h1>
+
+                <form action="#">
+                    <div class="input-box">
+                        <input type="email">
+                        <label for="email">Email</label>
+                        <i class="fa fa-envelope"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password">
+                        <label for="pass">Password</label>
+                        <i class="fa fa-lock"></i>
+                    </div>
+                    <label class="remember"><input type="checkbox">Remember Me <a href="#">Forgot Password?</a></label>
+
+                    <button class="btn">Login</button>
+                    <p>Don't Have an account? <a class="register-btn" href="#">Register</a></p>
+                </form>
+            </div>
+            <div class="form-box register">
+                <h1>Register</h1>
+
+                <form action="#">
+                    <div class="input-box">
+                        <input type="text">
+                        <label for="email">Username</label>
+                        <i class="fa fa-user"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="email">
+                        <label for="email">Email</label>
+                        <i class="fa fa-envelope"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password">
+                        <label for="pass">Password</label>
+                        <i class="fa fa-lock"></i>
+                    </div>
+                    <label class="remember"><input type="checkbox">Remember Me <a href="#">Forgot Password?</a></label>
+
+                    <button class="btn">Register</button>
+                    <p>Don't Have an account? <a class="login-btn" href="#">Login</a></p>
+                </form>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script src="https://use.fontawesome.com/2f36c756d5.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
