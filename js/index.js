@@ -6,11 +6,19 @@ const loginBtn = document.querySelector(".login-btn");
 const loginBox = document.querySelector(".login");
 const registerBox = document.querySelector(".register");
 const loginPopup = document.querySelector(".login-popup");
-const btnClose = document.querySelector(".fa-close");
+const btnClose = document.querySelector(".btn-close");
+const overlay = document.querySelector(".overlay");
+const books = document.querySelectorAll(".book");
 
 userPic.addEventListener("click", () => {
     wrapper.classList.toggle("active");
 })
+
+
+document.querySelector("section").addEventListener("click", () => {
+    wrapper.classList.remove("active");
+})
+
 
 registerBtn.addEventListener("click", () => {
     formWrapper.classList.add("active")
@@ -26,8 +34,10 @@ loginBtn.addEventListener("click", () => {
 
 loginPopup.addEventListener("click", () => {
     formWrapper.classList.add("active-popup")
+    overlay.classList.add("active")
 })
 btnClose.addEventListener("click", () => {
-    console.log("clicked");
     formWrapper.classList.remove("active-popup")
+    overlay.classList.remove("active")
 })
+
